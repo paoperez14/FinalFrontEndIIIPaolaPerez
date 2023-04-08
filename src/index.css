@@ -12,11 +12,12 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: rgba(175, 222, 236, 0.308);
   padding: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
+  margin: 0 auto ;
 }
 
 h1{
@@ -24,10 +25,10 @@ h1{
 }
 
 nav{
-  display: flex;
-  width: 80vw;
+  background-color: #e8dfdf;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-weight: bold;
 }
 
 a{
@@ -35,10 +36,40 @@ a{
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
+  
 }
 a:hover{
   color: rgb(136, 136, 136);
 } 
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+li {
+  display: inline-block;
+}
+
+li:nth-child(4) {
+  float: right;
+}
+
+.nav-link {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+  font-size: 13px;
+}
 
 footer {
   display: flex;
@@ -62,7 +93,6 @@ footer > p{
 }
 
 form{
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
@@ -71,28 +101,34 @@ form{
 }
 
 .card{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  border-radius: 0.5rem;
+  
 }
 
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
+  text-align: center;
 }
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
   gap: 1rem;
-  width: 90vw;
+  width: 70vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
+.imagen{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 250px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
 
 table {
  border-collapse: collapse;
@@ -100,7 +136,8 @@ table {
     width: 100%;
     display: table;
     border: 1px solid #ccc;
-
+    width: 94vw;
+    margin-left:3rem ;
 }
 
 td, th {
@@ -119,4 +156,54 @@ tr:nth-child(even) {
 }
 .dark > a {
   color: white;
+}
+
+.texto {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  justify-content: space-evenly;
+  background-color: rgb(243, 241, 241);
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-family: inherit;
+  color: black;
+  margin: 0.5rem;
+}
+
+.button {
+  background-color:rgba(247, 246, 243, 0.826) ;
+  border: 2px solid darkgray;
+  border-radius: 0.5rem;
+  padding: 0.2em 0.8em;
+  font-size: 1em;
+  font-weight: 450;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  align-items: center;
+}
+.button:hover {
+  background-color: rgb(108, 111, 111);
+}
+.button:focus,
+.button:focus-visible {
+outline: 4px auto -webkit-focus-ring-color;
+}
+
+.formulario {
+  display: flex;
+  gap: 1rem;
+  width: 20vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 200px;
 }
